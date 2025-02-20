@@ -9,6 +9,6 @@ export default class TaskList {
     }
 
     removeTaskAt(index) {
-        this.tasks = this.tasks.splice(index, 1);
+        this.tasks.splice(index, 1);
     }
 }

@@ -8,36 +8,8 @@ export default class Task {
         this.isComplete = false;
     }
 
-    set title(aTitle) {
-        this.title = aTitle;
-    }
-
-    get title() {
-        return this.title;
-    }
-
-    set description(aDescription) {
-        this.description = aDescription;
-    }
-
-    get description() {
-        return this.description;
-    }
-
-    set dueDate(aDueDate) {
-        this.dueDate = aDueDate;
-    }
-
-    get dueDate() {
-        return this.dueDate;
-    }
-
-    set priority(aPriority) {
-        this.priority = aPriority;
-    }
-
     toggleComplete() {
-        this.compelte = !this.compelte;
+        this.isComplete = !this.isComplete;
     }
-    
+
 }
