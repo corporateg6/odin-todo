@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1.5rem 1fr 1.5rem;
+    grid-template-areas: "header header" "sidebar content" "footer footer";
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: gray;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: blue;
+}
+
+.content {
+    grid-area: content;
+    background-color: white;
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    overflow-x: auto;
+}
+
+.task-lists {
+    background-color: white;
+    display: flex;
+    gap: 16px;
+}
+
+.task-list {
+    background-color: yellow;
+    min-width: 200px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: red;
+}
