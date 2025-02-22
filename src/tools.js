@@ -20,6 +20,11 @@ export const tools = (function() {
 
         newProject.addTaskList(myTasks);
 
+        let myTasks2 = new TaskList("list2");
+        myTasks2.addTask(task1);
+
+        newProject.addTaskList(myTasks2);
+
         return newProject;
     }
 
